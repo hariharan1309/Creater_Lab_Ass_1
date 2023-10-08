@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    padding: 50px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+#head_logo{
+    width: 150px;
+    height: 50px;
+    float: left;
+    padding-top: 15px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline;
+    padding: 20px;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    transition: font-weight 1s;
+}
+#header_links{
+    display: flex;
+    align-items: center; /* Vertically align items within the nav */
+    list-style: none;
+    float: left;
+}
+nav ul li a:hover{
+    font-weight: bold;
+}
+.main_content{
+    margin: 50px 150px ;
+}
+#title1{
+    font-size: 64px;
+    font-weight: bolder;
+}
+#title2{
+    color: red;
+}
+#head_button{
+    padding: 15px 20px; /* Adjust padding as needed */
+    border-radius: 30px; /* Adjust the border-radius to control the roundness of the edges */
+    background-color: black; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Change cursor on hover */
+    transition: transform 1s;
+}
+#head_button:hover{
+    transform: scale(1.1);
+}
+
+.content1 ,.content2 {
+    line-height: 25px;
+}
+
+/* Style for the flex list */
+.serv_list {
+    margin: 50px 100px ;
+    list-style: none; /* Remove list bullets */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap items to the next row when they don't fit */
+    padding: 0; /* Remove default padding on the ul */
+    justify-content: center;
+}
+/* Style for each list item */
+.serv_list li {
+    min-width: 350px; /* Set the width */
+    min-height: 450px; /* Set the height */
+    text-align: center; /* Center text horizontally */
+    margin-bottom: 10px;
+}
+.small_grad img{
+    transition: transform 1s ease-in-out;
+}
+.service_topic,
+.service_info{
+    display: block;
+}
+.service_content{
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Add a transition for opacity */
+}
+.service-item {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    box-sizing: border-box;
+}
+.small_grad{
+    border-radius: 50%; width: 200px; height: 200px;
+    transition: width 1s ease-in-out,height 1s ease-in-out;
+    position: absolute;
+}
+.service-item:hover #service_topic,
+.service-item:hover #service_info {
+    display: none; /* Hide service_topic and service_info on hover */
+}
+
+.service-item:hover .small_grad img  {
+    transform: translateY(250px);
+}
+.service-item:hover .small_grad{
+    width: 350px; /* Set the width */
+    height: 350px
+}
+/* Add this CSS for the hover effect */
+.serv_list li:hover .service_topic,
+.serv_list li:hover .service_info {
+    display: none; /* Hide service_topic and service_info on hover */
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.serv_list li:hover .service_content {
+    display: block; /* Show service_content on hover */
+    animation: fadeIn 1s 0.5s  ease-in-out forwards; /* Apply a 1s delay and 1s transition */
+
+}
+.serv_list li:hover .small_grad img {
+    transform: translateY(250px);
+}
+.serv_list li:hover .small_grad {
+    width: 350px;
+    height: 350px;
+}
+
+
+#footer{
+    padding: 80px 20px;
+}
+#footer_word {
+    font-size: 40px;
+    color: red;
+    align-self: center;
+    font-weight: bold;
+    left: 50%;
+    right: 50%;
+    text-align: center; /* Center the text horizontally */
+}
+#footer_service{
+    display: flex;
+    list-style: none;
+}
+.class{
+    width: 200px;
+    height: 100px;
+}
+
+.footer_c svg {
+    padding-right: 15px;
+    float: right;
+    padding-top:10px;
+    transition: transform 1s;
+    transform: translateX(0); /* Initialize the SVG position */
+}
+.footer_c:hover svg {
+    transform: translateX(10px); /* Move the SVG 10px to the right */
+}
+.footer_c:hover h2{
+    color: #D5333E;
+}
+.foot_text{
+    display: inline;
+    font-weight: bold;
+    font-size: 30px;
+}
+#footer_cont{
+    display: flex;
+    justify-content: center;
+}
+#footer_cont img{
+    height: 24px;
+    width: 24px;
+    padding-left: 20px;
+
+}
+#foott{
+    margin-top: 20px;
+}
+#foott p{
+    text-align: center;
+}
+
