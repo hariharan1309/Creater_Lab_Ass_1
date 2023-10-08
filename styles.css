@@ -196,4 +196,14 @@ nav ul li a:hover{
 #foott p{
     text-align: center;
 }
-
+@media (max-width: 767px) {
+    body{
+        padding: 10px;
+    }
+    #head_logo{
+        width: 50px;
+        height: 25px;
+        float: left;
+        padding-top: 5px;
+    }
+}
